@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*
+	@ DEFAULT CSS | v1.0
+	================
+	default element style
+*/
+
+html {
+	min-width: 320px;
+	min-height: 100vh;
+	font-family: Sans-serif;
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--background-solid);
+	color: var(--text-primary);
+	font-family: 'NotoSansKR', '맑은 고딕', '돋움', MalgunGothic, Dotum, AppleGothic, Sans-serif, Arial;
+	font-size: 1rem;
+	letter-spacing: -0.5px;
+}

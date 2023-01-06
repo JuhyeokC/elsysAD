@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*
+	@ LAYOUT CSS | v1.0
+	================
+	layout template style
+*/
+
+.wrap {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	padding: 1rem;
+	overflow: hidden;
+}
+
+.content {
+	position: relative;
+}
