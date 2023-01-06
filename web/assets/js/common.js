@@ -114,6 +114,7 @@ function openPage(object) {
 	slider.appendChild(single);
 
 	document.addEventListener('DOMContentLoaded', () => {
+		console.log(content);
 		console.log(content.contentWindow.document.inputTxt());
 
 		// const id = iframe.getElementById(object.id_target);
