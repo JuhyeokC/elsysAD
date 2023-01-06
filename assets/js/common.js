@@ -84,6 +84,8 @@ const content_07 = {
 	summary: '재생에너지',
 };
 
+const contentArray = [content_01, content_02, content_03, content_04, content_05, content_06, content_07];
+
 function openPage(object) {
 	console.log('RUN');
 
@@ -115,13 +117,13 @@ function openPage(object) {
 
 	document.addEventListener('DOMContentLoaded', () => {
 		console.log(content);
-		console.log(content.contentWindow.document.inputTxt());
-
-		// const id = iframe.getElementById(object.id_target);
-		// const pw = iframe.getElementById(object.pw_target);
-		// console.log(id);
-		// console.log(pw);
+		const iframe = content.contentDocument;
+		console.log(iframe);
+		const id = iframe.getElementById(object.id_target);
+		const pw = iframe.getElementById(object.pw_target);
+		console.log(id);
+		console.log(pw);
 	});
 }
 
-openPage(content_01);
+openPage(contentArray[6]);
