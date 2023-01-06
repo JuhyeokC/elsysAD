@@ -14,7 +14,7 @@ const content_01 = {
 
 const content_02 = {
 	element: 'content_02',
-	loginPage: 'http://222.102.213.48:8081/main/login/loginForm.do',
+	loginPage: 'http://222.102.213.48:8081/',
 	movePage: 'http://222.102.213.48:8081/main/main.do',
 	id_target: 'usrId',
 	pw_target: 'usrPwd',
@@ -50,8 +50,8 @@ const content_04 = {
 
 const content_05 = {
 	element: 'content_05',
-	loginPage: null,
-	movePage: 'http://xraymng.neufgen.com/',
+	loginPage: 'http://xraymng.neufgen.com/',
+	movePage: 'http://xraymng.neufgen.com/w/en/business/animal.do',
 	id_target: null,
 	pw_target: null,
 	id: null,
@@ -126,4 +126,6 @@ function openPage(object) {
 	});
 }
 
-openPage(contentArray[6]);
+contentArray.forEach((content) => {
+	openPage(content);
+});
