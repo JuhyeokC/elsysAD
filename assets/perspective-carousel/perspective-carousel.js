@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// iLeft.classList.add('fa');
 		// iLeft.classList.add('fa-arrow-left');
 		const iLeftImg = document.createElement('img');
-		iLeftImg.src = '../assets/img/arrows/icon_angle_left.svg';
+		iLeftImg.src = './assets/img/arrows/icon_angle_left.svg';
 		leftArrow.classList.add('slider-left');
 		leftArrow.appendChild(iLeftImg);
 		leftArrow.addEventListener('click', () => {
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// iRight.classList.add('fa');
 		// iRight.classList.add('fa-arrow-right');
 		const iRightImg = document.createElement('img');
-		iRightImg.src = '../assets/img/arrows/icon_angle_right.svg';
+		iRightImg.src = './assets/img/arrows/icon_angle_right.svg';
 		rightArrow.classList.add('slider-right');
 		rightArrow.appendChild(iRightImg);
 		rightArrow.addEventListener('click', () => {
@@ -268,12 +268,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function playInterval() {
-		intervalControlButton.innerHTML = `<img src="../assets/img/icon/icon_pause.svg" />`;
+		intervalControlButton.innerHTML = `<img src="./assets/img/icon/icon_pause.svg" />`;
 		intervalControl = true;
 	}
 
 	function pauseInterval() {
-		intervalControlButton.innerHTML = `<img src="../assets/img/icon/icon_play.svg" />`;
+		intervalControlButton.innerHTML = `<img src="./assets/img/icon/icon_play.svg" />`;
 		intervalControl = false;
 	}
 
